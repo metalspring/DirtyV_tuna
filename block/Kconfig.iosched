@@ -192,6 +192,7 @@ config DEFAULT_IOSCHED
 	default "noop" if DEFAULT_NOOP
         default "sioplus" if DEFAULT_SIOPLUS
 	default "tripndroid" if DEFAULT_TRIPNDROID
+	default "fifo" if DEFAULT_FIFO
 
 endmenu
 
