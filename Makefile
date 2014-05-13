@@ -373,7 +373,7 @@ ifdef CONFIG_CC_GRAPHITE_OPTIMIZATION
 CFLAGS_KERNEL	+= -fgraphite-identity -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -ftree-loop-distribution -ftree-parallelize-loops=2
 endif
 ifdef CONFIG_CC_LINK_TIME_OPTIMIZATION
-CFLAGS_KERNEL	+= -flto -fno-toplevel-reorder -flto-compression-level=5 -fuse-linker-plugin
+CFLAGS_KERNEL	+= -flto -fno-toplevel-reorder -flto-compression-level=9 -fuse-linker-plugin
 endif
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
@@ -409,7 +409,7 @@ KBUILD_CFLAGS        += -fgraphite-identity -floop-parallelize-all -ftree-loop-l
 endif
 
 ifdef CONFIG_CC_LINK_TIME_OPTIMIZATION
-KBUILD_CFLAGS        += -flto -fno-toplevel-reorder -flto-compression-level=5 -fuse-linker-plugin
+KBUILD_CFLAGS        += -flto -fno-toplevel-reorder -flto-compression-level=9 -fuse-linker-plugin
 endif
 
 KBUILD_AFLAGS   := -D__ASSEMBLY__
