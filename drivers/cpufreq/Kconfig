@@ -161,11 +161,6 @@ config CPU_FREQ_DEFAULT_GOV_WHEATLEY
 	help
 	  Use the CPUFreq governor 'wheatley' as default.
 
-config CPU_FREQ_DEFAULT_GOV_DANCEDANCE
-	bool "dancedance"
-	select CPU_FREQ_GOV_DANCEDANCE
-	help
-
 config CPU_FREQ_DEFAULT_GOV_ABYSSPLUG
 	bool "abyssplug"
 	select CPU_FREQ_GOV_ABYSSPLUG
@@ -375,10 +370,6 @@ config CPU_FREQ_GOV_SAKURACTIVE
 
 config CPU_FREQ_GOV_WHEATLEY
 	tristate "'wheatley' cpufreq governor"
-	depends on CPU_FREQ
-
-config CPU_FREQ_GOV_DANCEDANCE
-	tristate "'dancedance' cpufreq governor"
 	depends on CPU_FREQ
 
 config CPU_FREQ_GOV_ABYSSPLUG
