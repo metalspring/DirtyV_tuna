@@ -17,6 +17,7 @@ obj-$(CONFIG_CPU_FREQ_GOV_DYNAMIC_INTERACTIVE)  += cpufreq_dynamic_interactive.o
 obj-$(CONFIG_CPU_FREQ_GOV_SAKURACTIVE)  += cpufreq_sakuractive.o
 obj-$(CONFIG_CPU_FREQ_GOV_WHEATLEY)	+= cpufreq_wheatley.o
 obj-$(CONFIG_CPU_FREQ_GOV_DANCEDANCE)	+= cpufreq_dancedance.o
+obj-$(CONFIG_CPU_FREQ_GOV_ABYSSPLUG)	+= cpufreq_abyssplug.o
 obj-$(CONFIG_CPU_FREQ_GOV_ADAPTIVE)     += cpufreq_adaptive.o  
 obj-$(CONFIG_CPU_FREQ_GOV_ONDEMANDX)  	+= cpufreq_ondemandx.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMARTASS2)	+= cpufreq_smartass2.o
